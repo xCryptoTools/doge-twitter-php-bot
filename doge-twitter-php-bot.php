@@ -27,7 +27,7 @@ if ($tweet_contains_keyword === true && $mail['enable'] === true) {
 
 // Place ByBit trade if needed
 if ($tweet_contains_keyword === true && $bybit['enable'] === true) {
-    if ($bybit['only_buy_if_not_active'] === false || bybit_has_open_position($bybit) === false) {
+    if ($bybit['only_buy_if_no_position'] === false || bybit_has_open_position($bybit) === false) {
         bybit_order($bybit);
     }
 }

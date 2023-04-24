@@ -70,8 +70,8 @@ $bybit['secret_key'] = '';
 $bybit['derivate_symbol_to_buy'] = 'DOGEUSDT'; // Symbol to buy
 $bybit['quantity_to_buy'] = 1000;
 
-// Set to false to only buy if there is no active trade on the symbol yet. Can prevent double trades
-$bybit['only_buy_if_not_active'] = true;
+// Set to true to only buy if there is no active trade on the symbol yet. Can prevent double trades
+$bybit['only_buy_if_no_position'] = true;
 
 // Stop loss and Take profit. Percentages are the move of the underlying ticker (excluding leverage!)
 $bybit['stop_loss_percentage'] = 5; // Example: '5'. Can be set to false to disable stop loss.
