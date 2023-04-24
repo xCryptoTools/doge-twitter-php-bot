@@ -30,7 +30,7 @@ The script can automatically open a contract on ByBit to long dogecoin with up t
 
 - Set $bybit['enable'] to true in config.inc.php
 - If you do not have an account yet, signup using the referral url: https://www.bybit.com/invite?ref=N617WP for added benefits and a bonus.
-- Make sure your ByBit account has derivate trading enabled and is set to 'unified' mode.
+- Make sure your ByBit account has derivate trading enabled and is set to 'unified' mode. Your default leverage setting will be used so make sure to set that as well.
 - In ByBit go to: API. Create a key with at least the permissions: `Contract - Orders (derivates)` , `Contract - Positions (derivates)` and `Derivates API V3 - Trade` . Update config.inc.php accordingly.
 
 ### Cronjob
