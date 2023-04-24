@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Doge Twitter PHP bot sample configuration.
+ * Doge Twitter PHP bot configuration.
  * Make sure to complete the config before running the script.
  */
 
@@ -46,7 +46,7 @@ $mail['from'] = ''; // Sender e-mail address, make sure this matches server/smtp
 
 $mail['smtp'] = true; // Set to true to use SMTP, set to false for php mail
 // If smtp is true, configure the following:
-$mail['smtp_secure'] = 'tls'; // usually 'tls'
+$mail['smtp_secure'] = 'tls'; // Usually 'tls'
 $mail['smtp_host'] = 'smtp.gmail.com';
 $mail['smtp_port'] = 587;
 $mail['smtp_username'] = '';
@@ -67,6 +67,8 @@ $bybit['api_key'] = '';
 $bybit['secret_key'] = '';
 
 // Symbol and quantity to buy
-$bybit['derivate_symbol_to_buy'] = 'DOGEUSDT'; // symbol to buy
+$bybit['derivate_symbol_to_buy'] = 'DOGEUSDT'; // Symbol to buy
 $bybit['quantity_to_buy'] = 1000;
+
+$bybit['only_buy_if_not_active'] = true; // Only buy if there is no active trade of this ticker. Can prevent double trades.
 

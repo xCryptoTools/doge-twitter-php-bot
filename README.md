@@ -20,16 +20,17 @@ Obtain a **v1.1** Twitter API key as follows:
 
 The script can send you e-mail notifications if the keyword was found in a tweet.
 
-- Enable in config.inc.php.
-- Make sure to enter from and to e-mail addresses .
+- Set $mail['enable'] to true in config.inc.php
+- Make sure to enter from and to e-mail addresses.
 - SMTP can be used for improved mail delivery.
 
 ### ByBit
 
 The script can automatically open a contract on ByBit to long dogecoin with up to 50x leverage.
 
-- Enable in config.inc.php
+- Set $bybit['enable'] to true in config.inc.php
 - If you do not have an account yet, signup using the referral url: https://www.bybit.com/invite?ref=N617WP for added benefits and a bonus.
+- Make sure your ByBit account has derivate trading enabled and is set to 'unified' mode.
 - In ByBit go to: API. Create a key with at least the permissions: Contract > Orders (derivates). Contract > Positions (derivates). Derivates API V3 > Trade. Update config.inc.php accordingly.
 
 ### Cronjob
